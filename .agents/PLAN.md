@@ -55,7 +55,6 @@ personal-memory-agent/
 │   └── test_memory_search.py
 ├── .env.example
 ├── requirements.txt
-├── docker-compose.yml
 └── README.md
 ```
 
@@ -205,9 +204,7 @@ class MockLLMProvider(LLMProvider):
 
 ## Step 6: Docker
 
-**`docker-compose.yml`**: `api` 서비스(8000포트) + `mongo:7` 서비스(27017포트) + `mongo_data` 볼륨.
 
-**`Dockerfile`**: `python:3.12-slim`, requirements 설치, `uvicorn app.main:app --host 0.0.0.0 --port 8000`.
 
 ---
 
